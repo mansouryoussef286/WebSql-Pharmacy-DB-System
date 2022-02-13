@@ -1,0 +1,115 @@
+* {
+    transition: all 2s;
+}
+
+.hide {
+    display: none;
+    opacity: none;
+}
+
+.form-cotainer {
+    width: 80%;
+    max-width: 600px;
+    margin: 2em auto;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+form .buttons {
+    margin: auto;
+}
+
+input[type=text],
+input[type=number] {
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+input[type=button] {
+    width: fit-content;
+    padding: 0.5em;
+    margin: 0.5em auto;
+}
+
+form .itemPic {
+    width: 100%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form .itemPic video,
+form .itemPic canvas {
+    width: 80%;
+    border-radius: 10px;
+    max-height: 300px;
+    max-width: 300px;
+    margin: 0.5em auto;
+}
+
+form .buySell {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+form .buySell .buySellBtn {
+    border-radius: 5px;
+    background-color: rgb(175, 235, 175);
+    padding: 0.2em;
+}
+
+
+/* editing invoice item id section */
+
+#item-Invoice {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#IVitemID,
+#IVitemQuantity {
+    width: 100%;
+}
+
+#addItemsBtn {
+    margin: 0;
+    padding: 0.2em;
+}
+
+
+/* table edit */
+
+.table-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 2em auto;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 1em;
+}
+
+.table-container table {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+}

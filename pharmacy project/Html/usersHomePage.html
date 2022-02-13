@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users homepage</title>
+    <link href="../CSS/users.css" rel="stylesheet" type="text/css">
+    <script defer src="../JavaScript/usersScript.js"></script>
+</head>
+
+<body>
+    <h1>
+        this is the users page
+    </h1>
+    <hr>
+    <!-- items form & container -->
+    <div class="form-cotainer">
+        <h2>Items</h2>
+        <form action="">
+            <input id="itemID" type="number" placeholder="item ID" required>
+            <input id="itemName" type="text" placeholder="item name">
+            <input id="itemQuantity" type="number" placeholder="item quantity">
+            <div class="itemPic">
+                <video autoplay="true" id="videoElement" class="hide"></video>
+                <div class="buttons">
+                    <button onclick="startCamera(event)">open camera</button>
+                    <button onclick="stop(event)">close camera</button>
+                    <button onclick="takescreenshot(event)">Take ScreenShot</button>
+                </div>
+                <canvas id="showscreenshot" class="hide"></canvas>
+            </div>
+            <div class="buttons">
+                <input type="button" value="Add item" onclick="addItem()">
+                <input type="button" value="Remove item" onclick="removeItem()">
+            </div>
+            <input type="button" value="show items" onclick="showItems()">
+
+        </form>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Quantity
+                    </th>
+                    <th>
+                        Picture
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="itemsTableBody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- invoices form & container -->
+    <div class="form-cotainer">
+        <h2>Invoices</h2>
+        <form action="">
+            <div id="item-Invoice">
+                <input id="IVitemID" type="number" placeholder="item ID">
+                <!-- <input id="addItemsBtn" type="button" value="Add Items" onclick="addAnotherItem()"> -->
+                <input id="IVitemQuantity" type="number" placeholder="item quantity">
+            </div>
+            <input id="customerName" type="text" placeholder="Customer name">
+            <div class="buySell">
+                <div class="buySellBtn">
+                    <label for="buy">Buy</label><input type="radio" name="typeOfInvoice" id="buy" checked>
+                </div>
+                <div class="buySellBtn">
+                    <label for="sell">Sell</label><input type="radio" name="typeOfInvoice" id="sell">
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="button" value="Save invoice" onclick="saveInvoice()">
+            </div>
+            <input type="button" value="show invoices" onclick="showInvoices()">
+        </form>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Customer name
+                    </th>
+                    <th>
+                        Type
+                    </th>
+                    <th>
+                        Item Id
+                    </th>
+                    <th>
+                        Quantity
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="itemsTableBody">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
